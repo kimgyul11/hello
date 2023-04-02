@@ -174,11 +174,12 @@ p {
 .home__avatar {
   width: 250px;
   height: 250px;
-
+  animation: img-appear 2s ease-out forwards;
   border-radius: 50%;
 }
 .home__introduce {
   margin-left: 30px;
+  animation: title-appear 2s ease-out forwards;
 }
 .home__title,
 .home__description {
@@ -186,6 +187,26 @@ p {
   text-align: left;
 }
 
+@keyframes title-appear {
+  from {
+    opacity: 0;
+    transform: translateY(3rem);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes img-appear {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
 .home__links {
   display: flex;
   width: 300px;
@@ -234,6 +255,7 @@ p {
   border-radius: 5px;
 }
 .about__container__textarea {
+  text-align: center;
   width: 70%;
   height: 100%;
   padding: 30px;
@@ -481,9 +503,9 @@ p {
   position: fixed;
   right: 15px;
   bottom: 15px;
-  width: 60px;
-  height: 60px;
-  font-size: 20px;
+  width: 50px;
+  height: 50px;
+  font-size: 15px;
   border-radius: 50%;
   background-color: var(--color-black);
   color: var(--color-light-white);
