@@ -100,23 +100,81 @@
       <section id="skills" class="section section__container">
         <h1>Skills</h1>
         <div class="skillCard">
-          <div class="skillCardImg-wrap">
-            <img
-              class="skillCard__img"
-              src="https://cdn-icons-png.flaticon.com/512/6211/6211957.png"
-              alt=""
-            />
+          <div class="skillTitle">Front-End</div>
+          <div class="skillCard__wrap">
+            <div class="skillCardImg-wrap">
+              <img
+                class="skillCard__img"
+                src="https://cdn-icons-png.flaticon.com/512/6211/6211957.png"
+                alt="Front-end이미지"
+              />
+            </div>
+            <ul class="skillCard__contents">
+              <li class="skillCard__content">
+                <img
+                  class="skillCard__content_img"
+                  src="https://cdn-icons-png.flaticon.com/512/3291/3291670.png"
+                  alt="HTML로고 이미지"
+                />
+              </li>
+              <li class="skillCard__content">
+                <img
+                  class="skillCard__content_img"
+                  src="https://www.htmlecsspro.com/uploads/images/2018/03/aplicando-estilos-css-1521410533.png"
+                  alt=""
+                />
+              </li>
+              <li class="skillCard__content">
+                <img
+                  class="skillCard__content_img"
+                  src="https://cdn-icons-png.flaticon.com/512/5968/5968292.png"
+                  alt=""
+                />
+              </li>
+
+              <li class="skillCard__content">
+                <img
+                  class="skillCard__content_img"
+                  src="https://cdn-icons-png.flaticon.com/512/753/753244.png"
+                  alt=""
+                />
+              </li>
+            </ul>
           </div>
-          <div class="skillCard__content">HTML,CSS,JavaScript,React</div>
         </div>
         <div class="skillCard">
-          <div class="skillCard__content">스프링,Mysql</div>
-          <div class="skillCardImg-wrap">
-            <img
-              class="skillCard__img"
-              src="https://cdn-icons-png.flaticon.com/512/5763/5763745.png"
-              alt=""
-            />
+          <div class="skillTitle">Back-End</div>
+          <div class="skillCard__wrap">
+            <ul class="skillCard__contents">
+              <li class="skillCard__content">
+                <img
+                  class="skillCard__content_img"
+                  src="https://cdn-icons-png.flaticon.com/512/5968/5968282.png"
+                  alt=""
+                />
+              </li>
+              <li class="skillCard__content">
+                <img
+                  class="skillCard__content_img"
+                  src="https://cdn-icons-png.flaticon.com/512/919/919836.png"
+                  alt=""
+                />
+              </li>
+              <li class="skillCard__content">
+                <img
+                  class="skillCard__content_img"
+                  src="https://cdn-icons-png.flaticon.com/512/753/753244.png"
+                  alt=""
+                />
+              </li>
+            </ul>
+            <div class="skillCardImg-wrap">
+              <img
+                class="skillCard__img"
+                src="https://cdn-icons-png.flaticon.com/512/5763/5763745.png"
+                alt=""
+              />
+            </div>
           </div>
         </div>
       </section>
@@ -138,10 +196,14 @@
         <div class="work__projects">
           <div class="project" data-type="introduce">
             <div class="project__imgWrap">
-              <img src="imgs/profile.png" alt="introduce" />
+              <img
+                src="https://cdn-icons-png.flaticon.com/512/9584/9584880.png"
+                alt="introduce"
+              />
             </div>
             <div class="project__rightWrap">
               <p>자기소개 페이지</p>
+
               <ul class="project__skill">
                 <li class="project__skill__item">
                   <img
@@ -162,14 +224,17 @@
                   />
                 </li>
               </ul>
+
               <div class="project__description">
-                <span>
-                  순수 HTML,CSS,JavaScript로 정적인 페이지를 작성해보았습니다.
-                  단순한 소개 페이지라서 리액트나 다른 라이브러리,프레임워크를
-                  사용하지 않고, 바닐라JS로 동적인 부분을 조작할 수 있게
-                  페이지를 제작하였습니다. 저의 정보와 프로젝트에 관한 정보를
-                  담고 있으며, 반응형으로 제작되었습니다.
-                </span>
+                순수 HTML,CSS,JavaScript로 정적인 페이지를 작성해보았습니다.
+                단순한 소개 페이지라서 리액트나 다른 라이브러리,프레임워크를
+                사용하지 않고, 바닐라JS로 동적인 부분을 조작할 수 있게 페이지를
+                제작하였습니다. 저의 정보와 프로젝트에 관한 정보를 담고 있으며,
+                반응형으로 제작되었습니다.
+              </div>
+              <div class="project__link">
+                <a href="/" class="link__icon">github로 이동</a>
+                <a href="/" class="link__icon">사이트로 이동</a>
               </div>
             </div>
           </div>
@@ -177,7 +242,7 @@
           <div class="project invisible" data-type="front-end">
             <div class="project__imgWrap">
               <img
-                src="https://cdn-icons-png.flaticon.com/512/4021/4021708.png"
+                src="https://cdn-icons-png.flaticon.com/512/1598/1598196.png"
                 alt="navbar"
               />
             </div>
@@ -205,20 +270,24 @@
               </ul>
               <div class="project__description">
                 <span>
-                  환경공학을 전공했던 저는 환경에 대한 관심이 많았습니다.환경
-                  보호에 관한 커뮤니티가 부족하다고 느껴 제작해보았습니다.
-                  분리수거 방법에 대한 정보를 제공하고, 각자 환경보호를 위해
-                  실행한 일들을 기록하고 공유합니다. 리액트를 이용해 제작하여
-                  높은 사용자경험을 제공합니다. 리액트 라우터를 이용하여 SPA를
-                  구축하였고, 서버는 파이어베이스를 이용하였습니다.
+                  분리수거 방법을 알려주는 리액트를 이용한 미니
+                  프로젝트입니다.<br />tailwindCss를 이용하여 화면 레이아웃을
+                  구성하였고,리액트 쿼리를 이용하여 상태를 관리하였습니다.
                 </span>
+              </div>
+              <div class="project__link">
+                <a href="/" class="link__icon">github로 이동</a>
+                <a href="/" class="link__icon">사이트로 이동</a>
               </div>
             </div>
           </div>
           <!-- 에어랭귀지 프로젝트 -->
           <div href="" class="project invisible" data-type="back-end">
             <div class="project__imgWrap">
-              <img src="imgs/projects/navbar.png" alt="navbar" />
+              <img
+                src="https://cdn-icons-png.flaticon.com/512/1350/1350120.png"
+                alt="navbar"
+              />
             </div>
             <div class="project__rightWrap">
               <p>AirLanguange</p>
@@ -245,12 +314,16 @@
               <div class="project__description">
                 <span> 언어 교환을 위한 </span>
               </div>
+              <div class="project__link">
+                <a href="/" class="link__icon">github로 이동</a>
+                <a href="/" class="link__icon">사이트로 이동</a>
+              </div>
             </div>
           </div>
           <!-- 팀플 -->
           <div class="project invisible" data-type="mobile">
             <div class="project__imgWrap">
-              <img src="imgs/projects/navbar.png" alt="navbar" />
+              <p>DODAM</p>
             </div>
             <div class="project__rightWrap">
               <p>DODAMX2</p>
@@ -282,6 +355,10 @@
                   페이지를 제작하였습니다. 저의 정보와 프로젝트에 관한 정보를
                   담고 있으며, 반응형으로 제작되었습니다.
                 </span>
+              </div>
+              <div class="project__link">
+                <a href="/" class="link__icon">github로 이동</a>
+                <a href="/" class="link__icon">사이트로 이동</a>
               </div>
             </div>
           </div>

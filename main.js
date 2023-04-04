@@ -161,5 +161,6 @@ const skillsObserverCallback = (e) => {
 };
 let skillsObserver = new IntersectionObserver(skillsObserverCallback);
 let skillCard = document.querySelectorAll(".skillCard");
+
 skillsObserver.observe(skillCard[0]);
 skillsObserver.observe(skillCard[1]);
