@@ -256,11 +256,17 @@ p {
   border-radius: 5px;
 }
 .about__container__textarea {
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   width: 70%;
   height: 100%;
   padding: 30px;
+  text-align: center;
+  font-size: var(--font-small);
+  line-height: 1.5em;
 }
+
 /* Skill */
 
 #skills {
@@ -269,14 +275,18 @@ p {
 }
 
 .skillCard {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin: auto;
-  width: 80%;
+  width: 100%;
+  height: 400px;
   transition: 1s;
   text-align: center;
   background-color: var(--color-black);
-  border-radius: 5px;
+  border-radius: 15px;
   margin-top: 15px;
-  padding: 15px;
+  padding: 35px;
 }
 .skillTitle {
   font-size: var(--font-medium);
@@ -289,20 +299,31 @@ p {
   width: 30%;
 }
 .skillCard__img {
-  width: 100%;
+  width: 70%;
+}
+.skillCard__contentWrap {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 .skillCard__contents {
   display: flex;
-  text-align: center;
-  width: 70%;
+  width: 100%;
   justify-content: center;
   align-items: center;
 }
-
+.skillCard__content__text {
+  color: var(--color-light-white);
+  font-size: medium;
+  text-align: left;
+  line-height: 1.5em;
+}
 .skillCard__content {
   display: flex;
   justify-content: center;
-  align-items: center;
+  text-align: left;
   width: 70px;
   height: 70px;
   border-radius: 50%;
@@ -315,7 +336,7 @@ p {
 }
 /* Project */
 #work {
-  margin-top: 150px;
+  margin-top: 550px;
 }
 
 .work__categories {
@@ -353,7 +374,7 @@ p {
   display: flex;
   width: 100%;
   height: 450px;
-  border: 1px solid #e0e0e0;
+  border-radius: 15px;
 
   background-color: var(--color-light-white);
 }
@@ -366,6 +387,8 @@ p {
   justify-content: center;
   align-items: center;
   background-color: white;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
   width: 30%;
 }
 .project__imgWrap img {
@@ -424,6 +447,7 @@ p {
   width: 100%;
   height: 100%;
   font-size: var(--font-small);
+  line-height: 1.7em;
 }
 
 .project__description h3 {
@@ -432,13 +456,17 @@ p {
 
 /* Contact */
 #contact {
-  height: 500px;
+  margin-top: 500px;
+  height: 700px;
 }
 .contact__container {
-  display: flex;
-  justify-content: center;
+  border: 1px solid #e0e0e0;
+  border-radius: 15px;
+  margin: auto;
+  width: 50%;
+  flex-direction: column;
+  justify-content: flex-end;
   align-items: center;
-  height: 100%;
 }
 .contact__title {
   margin: 32px 0;
@@ -507,20 +535,42 @@ p {
   .home__title {
     text-align: center;
   }
+  .about__container__textarea {
+    width: 100%;
+    padding: 8px;
+    justify-content: flex-start;
+  }
 
   /* 스킬영역 */
   #skills {
     height: 500px;
   }
+  .skillCard__wrap {
+    justify-content: center;
+    width: 100%;
+  }
   .skillCard {
     margin-top: 30px;
+    padding: 8px;
+    height: 250px;
   }
 
+  .skillCardImg-wrap {
+    display: none;
+  }
   .skillCard__content {
-    width: 30px;
-    height: 30px;
+    width: 50px;
+    height: 50px;
+  }
+  .skillCard__content__text {
+    font-size: var(--font-micro);
   }
   /* 프로젝트 영역 */
+  #work {
+    margin-top: 250px;
+  }
+  .work__categories {
+  }
   .work__projects {
     display: flex;
     align-items: flex-start;
@@ -529,19 +579,21 @@ p {
   .project {
     flex-direction: column;
     align-items: center;
+    height: 550px;
   }
 
   .project__imgWrap {
     width: 100%;
     height: 50%;
+    border-radius: 5px;
+    padding: 15px;
   }
   .project__imgWrap img {
-    width: 40%;
-    height: 100%;
+    width: 30%;
   }
   .project__skill__item {
-    width: 50px;
-    height: 50px;
+    width: 45px;
+    height: 45px;
   }
   .project__rightWrap {
     width: 100%;
@@ -549,6 +601,7 @@ p {
   }
   .project__description {
     width: 100%;
+    font-size: var(--font-micro);
   }
 }
 

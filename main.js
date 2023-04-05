@@ -144,7 +144,7 @@ window.addEventListener("wheel", () => {
   }
   selectNavItem(navItems[selectedNavIndex]);
 });
-
+addEventListener("scroll", () => {});
 //스킬영역 카드
 const skillsObserverCallback = (e) => {
   e.forEach((card) => {
