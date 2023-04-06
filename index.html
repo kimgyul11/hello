@@ -81,7 +81,7 @@
 
       <!-- About -->
       <section id="about" class="section section__container">
-        <h1>About me</h1>
+        <h1 class="section__title">About me</h1>
         <div class="about__container">
           <img class="about__container__img" src="imgs/about.JPG" alt="" />
           <div class="about__container__textarea">
@@ -101,7 +101,7 @@
 
       <!-- Skills -->
       <section id="skills" class="section section__container">
-        <h1>Skills</h1>
+        <h1 class="skill__title">Skills</h1>
         <!-- 프론트 카드 -->
         <div class="skillCard">
           <div class="skillCard__wrap">
@@ -147,8 +147,8 @@
               <div class="skillCard__content__text">
                 flex와 grid를 사용하여 화면 레이아웃 구성을 할 수 있습니다.<br />
                 ES6를 이용한 자바스크립트 문법을 사용해 본 경험이 있습니다.<br />
-                리액트의 상태 관리를 위한 context API, Redux, 리액트 쿼리를
-                사용해 봤습니다.
+                리액트의 상태 관리를 위한 Redux, 리액트 쿼리를 사용경험이
+                있습니다.
               </div>
             </div>
           </div>
@@ -245,16 +245,22 @@
               </ul>
 
               <div class="project__description">
-                순수 HTML,CSS,JavaScript로 정적인 페이지를 작성해보았습니다.
-                단순한 소개 페이지라서 리액트나 다른 라이브러리,프레임워크를
-                사용하지 않고, 바닐라JS로 동적인 부분을 조작할 수 있게 페이지를
-                제작하였습니다. 저의 정보와 프로젝트에 관한 정보를 담고 있으며,
-                CSS의 flex 속성을 이용하여 반응형 페이지에 대한 이해를 높일 수
-                있었습니다.
+                자기소개를 위한 페이지입니다. <br />
+                순수 HTML,CSS,JavaScript로 제작하였습니다. CSS의 flex 속성을
+                이용하여 페이지 레이아웃을 구성했습니다.<br />
+                반응형으로 제작하였고, 반응형 페이지에 대한 이해를 높일 수
+                있었습니다.<br />
+                자바스크립트로 DOM을 조작하는 방법과 여러 이벤트를 다룰 수
+                있었던 프로젝트였습니다.
               </div>
               <div class="project__link">
-                <a href="/" class="link__icon">github로 이동</a>
-                <a href="/" class="link__icon">사이트로 이동</a>
+                <a
+                  href="https://github.com/kimgyul11/hello"
+                  target="_blank"
+                  class="link__icon"
+                  >github로 이동</a
+                >
+                <a href="#home" class="link__icon">사이트로 이동</a>
               </div>
             </div>
           </div>
@@ -302,8 +308,18 @@
                 </span>
               </div>
               <div class="project__link">
-                <a href="/" class="link__icon">github로 이동</a>
-                <a href="/" class="link__icon">사이트로 이동</a>
+                <a
+                  href="https://github.com/kimgyul11/greenbook"
+                  target="_blank"
+                  class="link__icon"
+                  >github로 이동</a
+                >
+                <a
+                  href="https://sweet-pie-594659.netlify.app/"
+                  target="_blank"
+                  class="link__icon"
+                  >사이트로 이동</a
+                >
               </div>
             </div>
           </div>
@@ -339,18 +355,25 @@
               </ul>
               <div class="project__description">
                 <span
-                  >평소 언어를 배우는것에 관심이 많아 제작하게 되었습니다.<br />
-                  게시판 형식의 묻고 답하는 언어 교환 사이트입니다. 기본적인
-                  CRUD를 구현해 볼 수 있었던 프로젝트였습니다. 이 프로젝트로
-                  백엔드 서버가 데이터 베이스와 어떤식으로 통신을 하는지 ,
-                  SQL문을 어떤식으로 작성해야 하는지에 대한 이해를 높일 수
-                  있었습니다. 제이쿼리에서 제공하는 AJAX 메소드를 통해 비동기
-                  통신에 대한 개념을 배울 수 있었습니다.
+                  >평소 언어를 배우는것에 관심이 많아 계획한 프로젝트입니다.<br />
+                  게시판 형식의 묻고 답하는 언어 교환 사이트로 기본적인 CRUD를
+                  구현해 볼 수 있었던 프로젝트였습니다. 이 프로젝트로 백엔드
+                  서버가 데이터 베이스와 어떤식으로 통신을 하는지 , SQL문을
+                  어떤식으로 작성해야 하는지에 대한 이해를 높일 수 있었습니다.
+                  제이쿼리에서 제공하는 AJAX 메소드를 통해 비동기 통신에 대한
+                  개념을 배울 수 있었습니다.
                 </span>
               </div>
               <div class="project__link">
-                <a href="/" class="link__icon">github로 이동</a>
-                <a href="/" class="link__icon">사이트로 이동</a>
+                <a
+                  href="https://github.com/kimgyul11/kofu"
+                  target="_blank"
+                  class="link__icon"
+                  >github로 이동</a
+                >
+                <a href="http://3.34.53.1/" target="_blank" class="link__icon"
+                  >사이트로 이동</a
+                >
               </div>
             </div>
           </div>
@@ -383,15 +406,22 @@
               </ul>
               <div class="project__description">
                 <span>
-                  4인 팀 프로젝트입니다. 기존의 슬랙과 같은 메신저에
-                  '여행'이라는 테마를 합쳐 친구들과 여행 계획을 세울 수 있는
-                  웹을 구성했습니다.<br />팀원들과 함께 소통하며 수정해 나가는
-                  과정에서 협업에 대한 경험을 쌓을 수 있었습니다.<br />
+                  4인 팀 프로젝트<br />
+                  기존의 슬랙과 같은 메신저에 '여행'이라는 테마를 합쳐 친구들과
+                  여행 계획을 세울 수 있는 웹을 구성했습니다.<br />firebase를
+                  연동한 채팅기능과 카카오 맵 API를 이용하여 루트를 기록하는
+                  기능이 있습니다<br />
+                  팀 프로젝트롤 통해 팀원들과 함께 소통하며 협업에 대한 경험을
+                  쌓을 수 있었습니다.
                 </span>
               </div>
               <div class="project__link">
-                <a href="/" class="link__icon">github로 이동</a>
-                <a href="/" class="link__icon">사이트로 이동</a>
+                <a
+                  href="http://3.34.53.1:8089"
+                  target="_blank"
+                  class="link__icon"
+                  >사이트로 이동</a
+                >
               </div>
             </div>
           </div>
@@ -399,11 +429,15 @@
       </section>
 
       <!-- Contact -->
-      <section id="contact" class="section">
+      <section id="contact">
         <div class="contact__container">
-          <h2 class="contact__title">🙇🏻‍♂️</h2>
-          <h2 class="contact__email">Email : coloo88@naver.com</h2>
-          <h2 class="contact__email">Tel : 010-5557-6295</h2>
+          <div class="contact__img">
+            <img src="./imgs/contact.png" alt="" />
+          </div>
+          <div class="contact__text">
+            <div class="contact__email">📧 coloo88@naver.com</div>
+            <div class="contact__email">📞 010-5557-6295</div>
+          </div>
         </div>
       </section>
       <!-- Arrow up -->

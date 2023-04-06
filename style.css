@@ -1,5 +1,18 @@
 /* Global */
 @font-face {
+  @font-face {
+    font-family: "SUIT-Regular";
+    src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_suit@1.0/SUIT-Regular.woff2")
+      format("woff2");
+    font-weight: normal;
+    font-style: normal;
+  }
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_suit@1.0/SUIT-Regular.woff2")
+    format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
   font-family: "Pretendard-Regular";
   src: url("https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff")
     format("woff");
@@ -45,9 +58,11 @@
   box-sizing: border-box;
   scroll-margin-top: 50px;
 }
-
+html {
+  scroll-behavior: smooth;
+}
 body {
-  font-family: "Pretendard-Regular";
+  font-family: "SUIT-Regular";
   margin: 0;
 }
 
@@ -107,6 +122,11 @@ p {
   top: 0;
   margin: auto;
   background-color: #fafafa;
+}
+.section__title {
+  display: inline-block;
+  background: linear-gradient(to top, #eeeeee, transparent 50%);
+  border-radius: 5px;
 }
 
 /* Navbar */
@@ -273,7 +293,9 @@ p {
   margin-top: 50px;
   height: 700px;
 }
-
+.skill__title {
+  margin-bottom: 120px;
+}
 .skillCard {
   display: flex;
   justify-content: center;
@@ -285,7 +307,7 @@ p {
   text-align: center;
   background-color: var(--color-black);
   border-radius: 15px;
-  margin-top: 15px;
+  margin-top: 35px;
   padding: 35px;
 }
 .skillTitle {
@@ -456,20 +478,27 @@ p {
 
 /* Contact */
 #contact {
-  margin-top: 500px;
-  height: 700px;
+  margin-top: 200px;
+  background-color: var(--color-black);
 }
 .contact__container {
-  border: 1px solid #e0e0e0;
-  border-radius: 15px;
-  margin: auto;
-  width: 50%;
-  flex-direction: column;
-  justify-content: flex-end;
+  height: 200px;
+  display: flex;
+  justify-content: center;
   align-items: center;
+  color: var(--color-white);
 }
-.contact__title {
-  margin: 32px 0;
+.contact__img {
+  width: 70px;
+  height: 70px;
+  margin-right: 15px;
+}
+.contact__img img {
+  width: 100%;
+}
+.contact__text {
+  line-height: 1.5em;
+  font-size: var(--font-regular);
 }
 
 /* For below 768px screen width */
@@ -569,8 +598,7 @@ p {
   #work {
     margin-top: 250px;
   }
-  .work__categories {
-  }
+
   .work__projects {
     display: flex;
     align-items: flex-start;
