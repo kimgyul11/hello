@@ -85,7 +85,8 @@
         <div class="about__container">
           <img class="about__container__img" src="imgs/about.JPG" alt="" />
           <div class="about__container__textarea">
-            이젠 아카데미에서 6개월간 스프링 기반 웹개발 교육을 받았습니다.<br />
+            끊임없이 노력하는 이젠 아카데미에서 6개월간 스프링 기반 웹개발
+            교육을 받았습니다.<br />
             수료 이후 자바스크립트가 부족한 것 같아 강의를 들으며 부족한 부분을
             공부를 하였습니다.<br />
             그러면서 프론트엔드에 대한 관심이 생기게 되었고, 리액트를 배우게
@@ -101,7 +102,7 @@
 
       <!-- Skills -->
       <section id="skills" class="section section__container">
-        <h1 class="skill__title">Skills</h1>
+        <h1 class="skill__title section__title">Skills</h1>
         <!-- 프론트 카드 -->
         <div class="skillCard">
           <div class="skillCard__wrap">
@@ -147,8 +148,9 @@
               <div class="skillCard__content__text">
                 flex와 grid를 사용하여 화면 레이아웃 구성을 할 수 있습니다.<br />
                 ES6를 이용한 자바스크립트 문법을 사용해 본 경험이 있습니다.<br />
-                리액트의 상태 관리를 위한 Redux, 리액트 쿼리를 사용경험이
-                있습니다.
+                리액트 상태 관리를 위한 Redux, 리액트 쿼리를 사용경험이
+                있습니다.<br />
+                리액트 라우터를 사용하여 SPA를 구성한 경험이 있습니다.
               </div>
             </div>
           </div>
@@ -182,9 +184,10 @@
                 </li>
               </ul>
               <div class="skillCard__content__text">
-                스프링 레거시를 이용하여 게시판 형식의 개인프로젝트를
-                진행하였습니다.<br />
-                CRUD구현을 위한 SQL문을 작성해본 경험이 있습니다.<br />
+                스프링 레거시를 기반으로 개인 프로젝트를 경험해 보았습니다.<br />
+                MyBatis를 사용하여 XML방식의 SQL문을 처리한 경험이 있습니다.<br />
+                CRUD구현을 위한 테이블 작성과 SQL문을 작성해본 경험이
+                있습니다.<br />
               </div>
             </div>
             <div class="skillCardImg-wrap">
@@ -200,19 +203,21 @@
 
       <!-- Work -->
       <section id="work" class="section section__container">
-        <h1>Projects</h1>
+        <h1 class="section__title project__title">Projects</h1>
         <!-- 카테고리 영역 -->
         <div class="work__categories">
           <button class="category__btn selected" data-filter="introduce">
             HELLO!
           </button>
-          <button class="category__btn" data-filter="front-end">그린북</button>
-          <button class="category__btn" data-filter="back-end">
+          <button class="category__btn" data-filter="greenbook">그린북</button>
+          <button class="category__btn" data-filter="airLanguange">
             AirLanguange
           </button>
-          <button class="category__btn" data-filter="mobile">DODAM</button>
+          <button class="category__btn" data-filter="dodam">DODAM</button>
         </div>
+        <!-- 프로젝트 아이템 -->
         <div class="work__projects">
+          <!-- 자기소개 -->
           <div class="project" data-type="introduce">
             <div class="project__imgWrap">
               <img
@@ -222,7 +227,6 @@
             </div>
             <div class="project__rightWrap">
               <p>자기소개 페이지</p>
-
               <ul class="project__skill">
                 <li class="project__skill__item">
                   <img
@@ -243,7 +247,6 @@
                   />
                 </li>
               </ul>
-
               <div class="project__description">
                 자기소개를 위한 페이지입니다. <br />
                 순수 HTML,CSS,JavaScript로 제작하였습니다. CSS의 flex 속성을
@@ -258,14 +261,14 @@
                   href="https://github.com/kimgyul11/hello"
                   target="_blank"
                   class="link__icon"
-                  >github로 이동</a
+                  >github</a
                 >
-                <a href="#home" class="link__icon">사이트로 이동</a>
+                <a href="#home" class="link__icon">URL</a>
               </div>
             </div>
           </div>
-          <!-- 리액트 페이지 -->
-          <div class="project invisible" data-type="front-end">
+          <!-- 그린북 -->
+          <div class="project invisible" data-type="greenbook">
             <div class="project__imgWrap">
               <img
                 src="https://cdn-icons-png.flaticon.com/512/1598/1598196.png"
@@ -312,19 +315,19 @@
                   href="https://github.com/kimgyul11/greenbook"
                   target="_blank"
                   class="link__icon"
-                  >github로 이동</a
+                  >github</a
                 >
                 <a
                   href="https://sweet-pie-594659.netlify.app/"
                   target="_blank"
                   class="link__icon"
-                  >사이트로 이동</a
+                  >URL</a
                 >
               </div>
             </div>
           </div>
           <!-- 에어랭귀지 프로젝트 -->
-          <div href="" class="project invisible" data-type="back-end">
+          <div href="" class="project invisible" data-type="airLanguange">
             <div class="project__imgWrap">
               <img
                 src="https://cdn-icons-png.flaticon.com/512/1350/1350120.png"
@@ -360,8 +363,8 @@
                   구현해 볼 수 있었던 프로젝트였습니다. 이 프로젝트로 백엔드
                   서버가 데이터 베이스와 어떤식으로 통신을 하는지 , SQL문을
                   어떤식으로 작성해야 하는지에 대한 이해를 높일 수 있었습니다.
-                  제이쿼리에서 제공하는 AJAX 메소드를 통해 비동기 통신에 대한
-                  개념을 배울 수 있었습니다.
+                  <br />제이쿼리에서 제공하는 AJAX 메소드를 통해 비동기 통신에
+                  대한 개념을 배울 수 있었습니다.
                 </span>
               </div>
               <div class="project__link">
@@ -369,16 +372,16 @@
                   href="https://github.com/kimgyul11/kofu"
                   target="_blank"
                   class="link__icon"
-                  >github로 이동</a
+                  >github</a
                 >
                 <a href="http://3.34.53.1/" target="_blank" class="link__icon"
-                  >사이트로 이동</a
+                  >URL</a
                 >
               </div>
             </div>
           </div>
-          <!-- 팀플 -->
-          <div class="project invisible" data-type="mobile">
+          <!-- 도담 -->
+          <div class="project invisible" data-type="dodam">
             <div class="project__imgWrap">
               <p>DODAM</p>
             </div>
@@ -420,7 +423,7 @@
                   href="http://3.34.53.1:8089"
                   target="_blank"
                   class="link__icon"
-                  >사이트로 이동</a
+                  >URL</a
                 >
               </div>
             </div>

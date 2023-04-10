@@ -268,6 +268,7 @@ p {
   height: 100%;
   padding: 50px;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
@@ -360,7 +361,9 @@ p {
 #work {
   margin-top: 550px;
 }
-
+.project__title {
+  margin: 50px 0 100px 0;
+}
 .work__categories {
   margin: 40px auto;
   text-align: center;
@@ -389,8 +392,8 @@ p {
   transition: all var(--animation-duration) ease-out;
 }
 .work__projects.anim-out {
-  opacity: 0.6;
-  transform: scale(0.96) translateY(40px);
+  opacity: 0.3;
+  transform: scale(0.96);
 }
 .project {
   display: flex;
@@ -453,6 +456,7 @@ p {
   margin-top: 5px;
 }
 .link__icon {
+  width: 100px;
   border: 1px solid;
   background-color: #1f1f24;
   border-radius: 5px;
@@ -501,7 +505,7 @@ p {
   font-size: var(--font-regular);
 }
 
-/* For below 768px screen width */
+/* 반응형 768px */
 @media screen and (max-width: 768px) {
   :root {
     /* Font size */
