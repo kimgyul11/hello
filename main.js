@@ -145,22 +145,32 @@ window.addEventListener("wheel", () => {
   selectNavItem(navItems[selectedNavIndex]);
 });
 addEventListener("scroll", () => {});
-//스킬영역 카드
-const skillsObserverCallback = (e) => {
-  e.forEach((card) => {
-    if (card.isIntersecting) {
-      setTimeout(() => {
-        card.target.style.opacity = 1;
-        card.target.style.transform = "translateY(0px)";
-      }, 450);
-    } else {
-      card.target.style.opacity = 0;
-      card.target.style.transform = "translateY(30%)";
-    }
-  });
-};
-let skillsObserver = new IntersectionObserver(skillsObserverCallback);
-let skillCard = document.querySelectorAll(".skillCard");
 
-skillsObserver.observe(skillCard[0]);
-skillsObserver.observe(skillCard[1]);
+//인터렉티브 효과 함수
+function observerFn(item, time) {
+  //observer Callback함수
+  const ObserverCallback = (e) => {
+    e.forEach((item) => {
+      if (item.isIntersecting) {
+        setTimeout(() => {
+          item.target.style.opacity = 1;
+          item.target.style.transform = "translateY(0px)";
+        }, time);
+      } else {
+        item.target.style.opacity = 0;
+        item.target.style.transform = "translateY(20%)";
+      }
+    });
+  };
+  let observer = new IntersectionObserver(ObserverCallback);
+
+  //대상을 감지하는 observe
+  for (let i = 0; i < item.length; i++) {
+    observer.observe(item[i]);
+  }
+}
+
+const textBox = document.querySelectorAll(".textarea-item");
+observerFn(textBox, 520);
+const skillbox = document.querySelectorAll(".skillCard");
+observerFn(skillbox, 470);

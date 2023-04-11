@@ -51,6 +51,7 @@
 
   /* Annimation */
   --animation-duration: 300ms;
+  --animation-duration-1: 1000ms;
 }
 
 /* Universal tags */
@@ -182,7 +183,7 @@ p {
   background: var(--color-black);
   padding: 40px;
   padding-top: 70px;
-  height: 850px;
+  height: 1050px;
   text-align: center;
   transform: var(--animation-duration);
 }
@@ -239,6 +240,7 @@ p {
   height: 45px;
   transition: all 0.5s;
   cursor: pointer;
+  text-align: center;
 }
 .link:hover {
   transform: translateY(-10px);
@@ -261,7 +263,6 @@ p {
 /* About */
 #about {
   margin-top: 50px;
-  height: 700px;
 }
 .about__container {
   width: 100%;
@@ -274,28 +275,40 @@ p {
 }
 .about__container__img {
   width: 30%;
-  border-radius: 5px;
+  border-radius: 15px;
+  margin-bottom: 25px;
 }
 .about__container__textarea {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  width: 70%;
-  height: 100%;
-  padding: 30px;
+  justify-content: flex-start;
   text-align: center;
+  width: 70%;
+
   font-size: var(--font-small);
   line-height: 1.5em;
+}
+.textarea-item {
+  margin: 6px;
+  transition: var(--animation-duration-1);
+}
+.textarea-title {
+  font-size: var(--font-regular);
+  font-weight: var(--weight-bold);
+  margin-bottom: 5px;
+}
+.textarea-content {
+  font-size: var(--font-small);
+  color: var(--color-light-grey);
 }
 
 /* Skill */
 
 #skills {
   margin-top: 50px;
-  height: 700px;
 }
 .skill__title {
-  margin-bottom: 120px;
+  margin-bottom: 60px;
 }
 .skillCard {
   display: flex;
@@ -339,9 +352,14 @@ p {
 }
 .skillCard__content__text {
   color: var(--color-light-white);
-  font-size: medium;
-  text-align: left;
-  line-height: 1.5em;
+  font-size: var(--font-small);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+.skillCard__content__text li {
+  margin: 6px;
 }
 .skillCard__content {
   display: flex;
@@ -359,22 +377,26 @@ p {
 }
 /* Project */
 #work {
-  margin-top: 550px;
+  margin-top: 250px;
 }
 .project__title {
   margin: 50px 0 100px 0;
 }
 .work__categories {
+  display: flex;
+  justify-content: center;
   margin: 40px auto;
   text-align: center;
 }
 
 .category__btn {
-  border: 1px solid var(--color-dark-white);
   border-radius: var(--size-border-radius);
-  width: 200px;
+  background-color: var(--color-light-white);
   font-size: var(--font-regular);
-  padding: 8px 38px;
+  text-align: center;
+  width: 150px;
+  padding: 8px;
+  margin: 5px 6px;
 }
 
 .category__btn.selected,
@@ -575,9 +597,7 @@ p {
   }
 
   /* 스킬영역 */
-  #skills {
-    height: 500px;
-  }
+
   .skillCard__wrap {
     justify-content: center;
     width: 100%;
@@ -585,9 +605,15 @@ p {
   .skillCard {
     margin-top: 30px;
     padding: 8px;
-    height: 250px;
+    height: 300px;
   }
-
+  .skillCard__contentWrap {
+    width: 100%;
+  }
+  .skillCard__content__text {
+    width: 100%;
+    margin: auto;
+  }
   .skillCardImg-wrap {
     display: none;
   }
@@ -598,6 +624,7 @@ p {
   .skillCard__content__text {
     font-size: var(--font-micro);
   }
+
   /* 프로젝트 영역 */
   #work {
     margin-top: 250px;
@@ -607,7 +634,8 @@ p {
     display: flex;
     align-items: flex-start;
   }
-
+  .work__categories {
+  }
   .project {
     flex-direction: column;
     align-items: center;
