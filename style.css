@@ -209,6 +209,11 @@ p {
   text-align: left;
 }
 
+.click {
+  color: var(--color-dark-white);
+  font-size: var(--font-micro);
+}
+
 @keyframes title-appear {
   from {
     opacity: 0;
