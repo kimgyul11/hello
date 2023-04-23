@@ -212,9 +212,59 @@ p {
 .click {
   color: var(--color-dark-white);
   font-size: var(--font-micro);
+  animation: shake 1.5s infinite;
 }
 
-@keyframes title-appear {
+@keyframes shake {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-3px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+위 코드에서 translateY() 함수는 y축 방향으로 얼마나 이동할지를 나타내며,
+0은 이동하지 않는 것을 의미합니다. @keyframes 규칙에서는 0%,
+50%,
+100%에서
+  각각
+  다른
+  translateY()
+  값을
+  지정하여
+  요소가
+  위아래로
+  흔들리게
+  만들었습니다.
+  이렇게
+  구현한
+  효과는
+  infinite
+  키워드를
+  사용하여
+  애니메이션을
+  무한
+  반복하도록
+  설정하였으므로,
+효과가 계속해서 반복됩니다. 필요에 따라 애니메이션의 지속시간을 변경하거나,
+@keyframes
+  규칙에서
+  이동
+  거리와
+  시간을
+  조절하여
+  다양한
+  효과를
+  구현할
+  수
+  있습니다.
+  Share
+  Prompt
+  @keyframes
+  title-appear {
   from {
     opacity: 0;
     transform: translateY(3rem);
